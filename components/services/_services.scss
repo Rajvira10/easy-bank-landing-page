@@ -1,1 +1,54 @@
 //! Services
+#services {
+    background-color: $light-grayish-blue;
+    z-index: -1;
+    position: relative;
+    line-height:1.6;
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-column-gap: 20px;
+    }
+    .wrapper{
+        width:80%;
+        margin:0 auto;
+        h1{
+            padding: 6rem 0 1rem 0;
+            font-weight: $font-weight-regular;
+            font-size:2.5rem;
+            color:$dark-blue;
+        }
+        h4{
+            font-weight: $font-weight-regular;
+            font-size:1.2rem;
+            color: $grayish-blue
+            padding-bottom: 4rem;
+        }
+    }
+    .service{
+        h3{
+            font-size:1.5rem;
+            font-weight: $font-weight-regular;
+            padding: 1rem 0;
+            color:$dark-blue;
+        }
+        p{
+            font-size: 1.125rem;
+            color: #9698a6;
+            padding-bottom: 7rem;
+        }
+    }
+    
+}
+@media only screen and (max-width: 550px){
+    #services{
+        text-align: center;
+    
+    h1{
+        line-height: 1.2;
+    }
+    .grid{
+        grid-template-columns: 1fr;
+    }
+}
+}
